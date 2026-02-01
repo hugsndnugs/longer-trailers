@@ -17,10 +17,10 @@ jobs:
           components: rustfmt
 
       - name: Install repak
-        run: cargo install repak_cli
+        run: cargo install --git https://github.com/trumank/repak --path repak_cli
 
       - name: Pack mod
-        run: repak pack mod LongerTrailers_P.pak -v --mount-point "../../../"
+        run: repak_cli pack mod LongerTrailers_P.pak -v --mount-point "../../../"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
