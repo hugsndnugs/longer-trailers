@@ -22,7 +22,7 @@ jobs:
           cargo install --path repak-src/repak_cli
 
       - name: Pack mod
-        run: repak_cli pack mod LongerTrailers_P.pak -v --mount-point "../../../"
+        run: repak pack mod LongerTrailers_P.pak -v --mount-point "../../../"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
