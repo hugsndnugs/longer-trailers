@@ -17,7 +17,9 @@ jobs:
           components: rustfmt
 
       - name: Install repak
-        run: cargo install --git https://github.com/trumank/repak --path repak_cli
+        run: |
+          git clone --depth 1 https://github.com/trumank/repak.git repak-src
+          cargo install --path repak-src/repak_cli
 
       - name: Pack mod
         run: repak_cli pack mod LongerTrailers_P.pak -v --mount-point "../../../"
