@@ -1,8 +1,1 @@
-# Build output
-LongerTrailers_P.pak
-
-# Discovery: extracted game pak (optional; remove MotorTown-Windows.pak line to track the pak)
-MotorTown-Windows-extracted/
-
-# Optional: uncomment to avoid committing the game pak (large file)
-MotorTown-Windows.pak
+# Local artifacts (if any)
